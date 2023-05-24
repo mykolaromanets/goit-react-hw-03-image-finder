@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-// import { MagnifyingGlass } from 'react-loader-spinner';
 import './ButtonStyled.css';
 
 function Button({ onNextFetch }) {
