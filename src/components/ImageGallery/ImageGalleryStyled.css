@@ -2,6 +2,7 @@
   padding: 50px 0 50px 0;
   margin: 0 auto;
   display: flex;
+  max-width: calc(100vw - 20px);
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
