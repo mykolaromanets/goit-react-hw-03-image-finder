@@ -1,0 +1,6 @@
+.Item__styled {
+  display: flex;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
