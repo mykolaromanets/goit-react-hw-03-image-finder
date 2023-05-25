@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   gap: 10px;
   list-style: none;
-  background: rgb(2, 0, 36);
   background: linear-gradient(
     300deg,
     rgba(2, 0, 36, 1) 0%,
