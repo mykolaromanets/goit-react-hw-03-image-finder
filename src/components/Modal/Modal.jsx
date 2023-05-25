@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
 import { BsXLg } from 'react-icons/bs';
+import PropTypes from 'prop-types';
 import './Modal.css';
 
 const modalRoot = document.querySelector('#modal-root');
@@ -36,7 +36,6 @@ class Modal extends Component {
 
   render() {
     const { onClose, currentImageUrl, currentImageDescription } = this.props;
-
     return createPortal(
       <div className="Backdrop__styled" onClick={this.handleClickBackdrop}>
         <div className="Modal__styled">
