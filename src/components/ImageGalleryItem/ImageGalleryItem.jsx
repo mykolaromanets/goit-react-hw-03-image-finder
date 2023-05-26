@@ -3,7 +3,10 @@ import './ImageGalleryItemStyled.css';
 
 function ImageGalleryItem({ description, smallImage, largeImage, openModal }) {
   return (
-    <li className="Item__styled" onClick={openModal}>
+    <li
+      className="Item__styled"
+      onClick={() => openModal(largeImage, description)}
+    >
       <img
         src={smallImage}
         alt={description}
@@ -14,7 +17,7 @@ function ImageGalleryItem({ description, smallImage, largeImage, openModal }) {
   );
 }
 
-ImageGalleryItem.prototype = {
+ImageGalleryItem.propTypes = {
   description: PropTypes.string,
   smallImage: PropTypes.string.isRequired,
   largeImage: PropTypes.string.isRequired,

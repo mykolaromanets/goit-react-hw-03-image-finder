@@ -204,7 +204,7 @@ class App extends Component {
   };
 
   toggleModal = () => {
-    this.setState(({ showModal }) => ({ showModal: !showModal }));
+    this.setState(showModal => ({ showModal: !showModal }));
   };
   openModal = (imageUrl, imageDescription) => {
     const { showModal } = this.state;
@@ -215,18 +215,6 @@ class App extends Component {
       currentImageDescription: imageDescription,
     });
   };
-  // openModal = e => {
-  //   const currentImageUrl = e.target.dataset.large;
-  //   const currentImageDescription = e.target.alt;
-
-  //   if (e.target.nodeName === 'IMG') {
-  //     this.setState(({ showModal }) => ({
-  //       showModal: !showModal,
-  //       currentImageUrl: currentImageUrl,
-  //       currentImageDescription: currentImageDescription,
-  //     }));
-  //   }
-  // };
 
   render() {
     const {
